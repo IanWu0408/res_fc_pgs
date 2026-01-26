@@ -67,11 +67,18 @@ plink2 \
   --make-pgen \
   --out ukb21007_QC_done
 ```
-## Export to PLINK BED format
+## Export to PLINK BED/BGEN format
 ```bash
 plink2 \
   --pfile ukb21007_QC_done \
   --make-bed \
+  --threads 32 \
+  --memory 220000 \
+  --out ukb21007_QC_done
+
+plink2 \
+  --pfile ukb21007_QC_done \
+  --export bgen-1.2 \
   --threads 32 \
   --memory 220000 \
   --out ukb21007_QC_done
