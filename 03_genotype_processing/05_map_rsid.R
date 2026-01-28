@@ -38,7 +38,7 @@ CFG <- list(
   
   ## ---- Sample size ----
   # Used to compute effective N = N_total * INFO
-  n_total   = 116962
+  n_total   = 130394
 )
 
 
